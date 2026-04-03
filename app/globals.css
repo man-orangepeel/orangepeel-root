@@ -98,25 +98,6 @@ nav {
   width: 100%;
 }
 
-.hero-sup {
-  font-size: 0.68rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--orange);
-  margin-bottom: 1.75rem;
-  display: flex;
-  align-items: center;
-  gap: 0.9rem;
-}
-
-.hero-sup::before {
-  content: '';
-  width: 28px;
-  height: 1px;
-  background: var(--orange);
-  flex-shrink: 0;
-}
-
 .hero-title {
   font-family: var(--font-display);
   font-size: clamp(3rem, 6vw, 5.2rem);
@@ -148,7 +129,7 @@ nav {
 .hero-projects {
   list-style: none;
   padding: 0;
-  margin: 1.2rem 0 0 0;
+  margin: 1.2rem 0 1.5rem 0;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -172,6 +153,22 @@ nav {
 .hero-projects strong {
   color: rgba(245,240,232,0.85);
   font-weight: 500;
+}
+
+.hero-bio a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.hero-bio a:hover,
+.hero-projects a:hover {
+  color: var(--orange);
+}
+
+.hero-projects a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .hero-bio strong {
