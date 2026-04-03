@@ -36,7 +36,7 @@ export default function Home() {
         'Three collections: Warriors, Wizards, Cyphers',
         'Premium quality',
         'Bitcoin payments accepted',
-        'No crypto noise. No altcoins. Pure Bitcoin conviction.',
+        'No crypto noise. Pure Bitcoin conviction.',
       ],
     },
     {
@@ -47,7 +47,7 @@ export default function Home() {
       href: 'https://meetup.orangepeel.fr',
       features: [
         'Every 2nd Thursday · Le Startijenn · Île de Nantes · 19h',
-        'Free entry — all levels welcome, no registration',
+        'Free entry · All levels welcome',
         'Conference or workshop (optional) + open discussion',
         'Local Bitcoin merchants, consultants & builders',
       ],
