@@ -154,6 +154,35 @@ nav {
 
 .hero-bio p:last-child { margin-bottom: 0; }
 
+.hero-projects {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.hero-projects li {
+  font-size: 0.88rem;
+  color: rgba(245,240,232,0.55);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.hero-projects li::before {
+  content: '\2192';
+  position: absolute;
+  left: 0;
+  color: #f7931a;
+  font-size: 0.75rem;
+}
+
+.hero-projects strong {
+  color: rgba(245,240,232,0.85);
+  font-weight: 500;
+}
+
 .hero-bio strong {
   color: var(--text);
   font-weight: 500;
@@ -233,20 +262,21 @@ section { padding: 6.5rem 2.5rem; }
 
 .projects-grid {
   margin-top: 3.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .pcard {
   background: var(--bg-card);
   padding: 2.25rem 2rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 2rem;
+  align-items: start;
   position: relative;
   transition: background 0.2s;
+  border: 1px solid var(--border);
 }
 
 .pcard:hover { background: #161616; }
@@ -272,20 +302,27 @@ section { padding: 6.5rem 2.5rem; }
 }
 
 .pcard-icon {
+  grid-row: 1 / 4;
   width: 36px;
   height: 36px;
-  margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--orange-border);
   background: var(--orange-dim);
   color: var(--orange);
-  font-size: 0.9rem;
+  font-size: 2rem;
   font-weight: 500;
   font-family: var(--font-display);
   font-style: italic;
+  padding-top: 0.2rem;
 }
+
+.pcard-tag { grid-column: 2; }
+.pcard-title { grid-column: 2; }
+.pcard-desc { grid-column: 2; }
+.pcard-features { grid-column: 2; }
+.pcard-link { grid-column: 2; }
 
 .pcard-title {
   font-family: var(--font-display);
@@ -549,44 +586,30 @@ section { padding: 6.5rem 2.5rem; }
 
 /* ─── FOOTER ─── */
 footer {
-  background: var(--bg-alt);
-  border-top: 1px solid var(--border);
-  padding: 2.5rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 3rem 2rem;
 }
 
 .footer-inner {
-  max-width: var(--max);
+  max-width: 720px;
   margin: 0 auto;
+  text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-.footer-brand {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
+.footer-manifesto {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 700;
+  color: #f5f0e8;
+  letter-spacing: -0.01em;
 }
 
-.footer-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--orange);
-}
-
-.footer-name {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 0.95rem;
-  color: var(--text-soft);
-}
-
-.footer-line {
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
+.footer-copy {
+  font-size: 0.78rem;
+  color: rgba(245,240,232,0.28);
 }
 
 /* ─── RESPONSIVE ─── */
@@ -597,9 +620,7 @@ footer {
   .hero { padding: 7.5rem 1.5rem 5rem; }
   section { padding: 5rem 1.5rem; }
 
-  .projects-grid { grid-template-columns: 1fr; }
-  .iagent-layout { grid-template-columns: 1fr; gap: 3rem; }
-  .iagent-panel { position: static; }
+  .pcard { grid-template-columns: 1fr; }
   .manifesto-body { grid-template-columns: 1fr; gap: 3rem; }
 
   .footer-inner { flex-direction: column; text-align: center; }
