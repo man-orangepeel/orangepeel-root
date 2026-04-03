@@ -33,7 +33,6 @@ export default function Home() {
       href: 'https://wear.orangepeel.fr',
       features: [
         'Three collections: Warriors, Wizards, Cyphers',
-        'No crypto noise. Pure Bitcoin conviction.',
         'Premium quality',
         'Bitcoin payments',
       ],
@@ -75,7 +74,7 @@ export default function Home() {
     {
       icon: 'Fl',
       name: 'OrangePeel_Flow',
-      sub: 'High quality signal · Bitcoin only',
+      sub: 'High quality signal. Bitcoin only.',
       href: 'https://t.me/OrangePeel_Flow',
     },
     {
@@ -128,9 +127,9 @@ export default function Home() {
               Alongside this, four side projects — all gathered here.
             </p>
             <ul className="hero-projects">
-              <li><a href="https://t.me/OrangePeel_Flow" target="_blank" rel="noopener noreferrer"><strong>OrangePeel_Flow</strong></a> — French Telegram channel · Bitcoin only</li>
+              <li><a href="https://t.me/OrangePeel_Flow" target="_blank" rel="noopener noreferrer"><strong>OrangePeel_Flow</strong></a> — French Bitcoin only Telegram channel</li>
               <li><a href="https://wear.orangepeel.fr" target="_blank" rel="noopener noreferrer"><strong>OrangePeel_Wear</strong></a> — Clothes for Ungovernable People</li>
-              <li><a href="https://iagent.orangepeel.fr" target="_blank" rel="noopener noreferrer"><strong>OrangePeel_iAgent</strong></a> — OpenClaw&apos;s safe, open-source cousin · Free</li>
+              <li><a href="https://iagent.orangepeel.fr" target="_blank" rel="noopener noreferrer"><strong>OrangePeel_iAgent</strong></a> — OpenClaw&apos;s safe, open-source cousin</li>
               <li><a href="https://meetup.orangepeel.fr" target="_blank" rel="noopener noreferrer"><strong>MeetUp Bitcoin Nantes</strong></a> — Monthly meetup in France</li>
             </ul>
             <p>
@@ -253,7 +252,7 @@ export default function Home() {
       {/* ── FOOTER ── */}
       <footer>
         <div className="footer-inner">
-          <p className="footer-manifesto">Bitcoin frees money. Bitcoin frees minds.</p>
+          <p className="footer-manifesto">Bitcoin frees money · Bitcoin frees minds</p>
           <img src="/logo.png" alt="OrangePeel" className="footer-logo" />
           <p className="footer-copy">&copy; 2026 · Built on conviction. Paid in sats.</p>
         </div>
