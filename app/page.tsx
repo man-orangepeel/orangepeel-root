@@ -1,14 +1,14 @@
 export default function Home() {
   const projects = [
     {
-      tag: 'AI · Open Source',
+      tag: 'AI · Sovereign',
       icon: 'i',
       title: 'OrangePeel_iAgent',
-      desc: 'Open-source personal AI agent built on Claude. More transparent and more open than OpenClaw — 100% readable code, full security audit in one command. Designed to evolve toward local LLMs for full data sovereignty.',
+      desc: 'Personal AI agent built on Claude — more transparent, more secure, and more sovereign than OpenClaw. 100% readable code, full security audit in one command. Free on GitHub. Designed to evolve toward local LLMs for true offline sovereignty.',
       link: 'iagent.orangepeel.fr',
       href: 'https://iagent.orangepeel.fr',
       features: [
-        'Zero extra API cost — runs on your existing Claude subscription',
+        'Zero extra API cost — runs on your existing Anthropic subscription',
         'Email, calendar, voice, PDF — all on demand',
         'Proof of work: OrangePeel_Flow runs on iAgent daily',
         'Roadmap: local LLM support for true sovereignty',
@@ -21,6 +21,12 @@ export default function Home() {
       desc: 'Bitcoin-only clothing. Warriors, Wizards, Cyphers — three postures, one conviction. Wearing your values is a political act. No crypto noise, no speculation. Pure signal.',
       link: 'wear.orangepeel.fr',
       href: 'https://wear.orangepeel.fr',
+      features: [
+        'Three collections: Warriors, Wizards, Cyphers',
+        'Premium quality — ethical sourcing',
+        'Bitcoin payments accepted — onchain & Lightning',
+        'No crypto noise. No altcoins. Pure Bitcoin conviction.',
+      ],
     },
     {
       tag: 'Media · Telegram',
@@ -29,6 +35,12 @@ export default function Home() {
       desc: 'Free French-language Telegram channel. Several times a week: adoption signals, educational fundamentals, a weekly community poll. No altcoins, no ads. High-value signal only.',
       link: 'Join the channel',
       href: 'https://t.me/OrangePeel_Flow',
+      features: [
+        'Several times a week: adoption signals & educational fundamentals',
+        'Weekly community poll — results commented the next day',
+        'No ads, no altcoins, no short-term speculation',
+        'Runs on iAgent — automated, sovereign, daily',
+      ],
     },
     {
       tag: 'Community · Nantes',
@@ -37,6 +49,12 @@ export default function Home() {
       desc: 'Free monthly meetup. Every 2nd Thursday, Le Startijenn. Beginners, experts, merchants — no registration, no prerequisites. Bitcoin, without the jargon.',
       link: 'meetup.orangepeel.fr',
       href: 'https://meetup.orangepeel.fr',
+      features: [
+        'Every 2nd Thursday · Le Startijenn · Île de Nantes · 19h',
+        'Free entry — all levels welcome, no registration',
+        'Conference or workshop (optional) + open discussion',
+        'Local Bitcoin merchants, consultants & builders',
+      ],
     },
   ]
 
@@ -111,12 +129,18 @@ export default function Home() {
               but by giving me an <strong>incorruptible framework to act within</strong>.
             </p>
             <p>
-              Product Owner in an IT consultancy, serving major accounts (BPCE, PwC, EDF).
-              Currently on mission for <strong>Bitcoin Villages</strong>.
-              On the side, I pursue a few side projects — all gathered here.
+              Product Owner in IT consulting, on mission for major accounts (BPCE, PwC, EDF)
+              and currently for <strong>Bitcoin Villages</strong>.
+              Alongside this, four side projects — all gathered here.
             </p>
+            <ul className="hero-projects">
+              <li><strong>OrangePeel_Flow</strong> — Telegram channel · French · Bitcoin only</li>
+              <li><strong>OrangePeel_Wear</strong> — Clothes for Sovereigned People</li>
+              <li><strong>OrangePeel_iAgent</strong> — More sovereign than OpenClaw. Free on GitHub.</li>
+              <li><strong>MeetUp Bitcoin Nantes</strong> — Monthly meetup · Free · No prerequisites</li>
+            </ul>
             <p>
-              Bitcoin frees money. Bitcoin frees minds. We do our part.
+              Bitcoin frees money. Bitcoin frees minds. Let&apos;s do our part.
             </p>
           </div>
           <div className="hero-actions">
@@ -130,7 +154,7 @@ export default function Home() {
       <section id="work" className="projects-section">
         <div className="inner">
           <p className="sec-sup">Work</p>
-          <h2 className="sec-title">What I <em>build</em></h2>
+          <h2 className="sec-title">What I <em>build</em> — Side projects</h2>
           <p className="sec-sub">
             Four projects, one conviction. Each autonomous, each useful.
           </p>
@@ -141,7 +165,7 @@ export default function Home() {
                 href={p.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`pcard${p.features ? ' pcard-featured' : ''}`}
+                className="pcard"
               >
                 <div className="pcard-accent" />
                 <span className="pcard-tag">{p.tag}</span>
@@ -169,7 +193,7 @@ export default function Home() {
           <h2 className="sec-title">What I <em>stand for</em></h2>
           <div className="manifesto-body">
             <blockquote className="manifesto-quote">
-              At Orange Peel, everything is an expression of a state of mind.
+              Orange Peel is an expression of a state of mind.
               Born from a deep conviction in Bitcoin&apos;s power to uplift and empower —
               a world where money no longer belongs to rulers, but to the people.
               Bitcoiners are not merely preserving wealth. They are building the future.
@@ -236,12 +260,8 @@ export default function Home() {
       {/* ── FOOTER ── */}
       <footer>
         <div className="footer-inner">
-          <div className="footer-brand">
-            <div className="footer-dot" />
-            <span className="footer-name">orangepeel.fr</span>
-          </div>
-          <span className="footer-line">Bitcoin frees money. Bitcoin frees minds.</span>
-          <span className="footer-line">© 2026 · Built on conviction. Paid in sats.</span>
+          <p className="footer-manifesto">Bitcoin frees money. Bitcoin frees minds.</p>
+          <p className="footer-copy">&copy; 2026 · Built on conviction. Paid in sats.</p>
         </div>
       </footer>
     </>
