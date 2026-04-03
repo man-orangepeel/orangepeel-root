@@ -292,8 +292,8 @@ section { padding: 6.5rem 2.5rem; }
   padding: 0.45rem 0.9rem;
   margin-bottom: 1.75rem;
   align-self: flex-start;
-  font-family: var(--font-display);
-  font-style: italic;
+  font-family: var(--font-body);
+  font-style: normal;
   font-weight: 500;
 }
 
@@ -456,7 +456,7 @@ section { padding: 6.5rem 2.5rem; }
 
 .manifesto-quote {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(1.15rem, 2vw, 1.4rem);
   line-height: 1.7;
   color: var(--text);
