@@ -1,7 +1,7 @@
 export default function Home() {
   const projects = [
     {
-      tag: 'AI · Sovereign',
+      tag: '#AI',
       title: 'OrangePeel_iAgent',
       desc: 'Personal AI agent freed from OpenClaw — full ownership of the code for greater transparency and control. Full security audit in one command. Free on GitHub. Designed to evolve toward local LLMs for true offline sovereignty.',
       link: 'iagent.orangepeel.fr',
@@ -14,7 +14,7 @@ export default function Home() {
       ],
     },
     {
-      tag: 'Media · Telegram',
+      tag: '#MEDIA',
       title: 'OrangePeel_Flow',
       desc: 'Free French-language Telegram channel. Bitcoin only. 5\u20138 high-value signals per day.',
       link: 'Join the channel',
@@ -26,7 +26,7 @@ export default function Home() {
       ],
     },
     {
-      tag: 'Lifestyle · E-commerce',
+      tag: '#LIFESTYLE',
       title: 'OrangePeel_Wear',
       desc: 'A bold brand that embodies the spirit of Bitcoin through premium, purpose-driven apparel. Provocative, Subtle, Cryptic — your style is yours.',
       link: 'wear.orangepeel.fr',
@@ -38,7 +38,7 @@ export default function Home() {
       ],
     },
     {
-      tag: 'Community · Nantes',
+      tag: '#COMMUNITY',
       title: 'MeetUp Bitcoin Nantes',
       desc: 'Monthly meetup in France. Beginners and experts. Bitcoin, with and without the jargon.',
       link: 'meetup.orangepeel.fr',
@@ -188,6 +188,7 @@ export default function Home() {
               Orange Peel is an expression of a state of mind.
               Born from a deep conviction in Bitcoin&apos;s power to uplift and empower —
               a world where money no longer belongs to rulers, but to the people.
+              <span style={{display: 'block', marginTop: '0.5rem'}} />
               Bitcoiners are not merely preserving wealth. They are building the future.
             </blockquote>
             <div className="manifesto-pillars">
