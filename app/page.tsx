@@ -21,7 +21,6 @@ export default function Home() {
       href: 'https://t.me/OrangePeel_Flow',
       features: [
         'Adoption signals & educational fundamentals',
-        'Community polls',
         'No ads, no altcoins, no short-term speculation',
         'Runs freely and daily on OrangePeel_iAgent',
       ],
@@ -29,22 +28,22 @@ export default function Home() {
     {
       tag: 'Lifestyle · E-commerce',
       title: 'OrangePeel_Wear',
-      desc: 'OrangePeel_Wear embodies the spirit of Bitcoin through premium, purpose-driven apparel. Provocative, Subtle, Cryptic — your style is yours.',
+      desc: 'A bold brand that embodies the spirit of Bitcoin through premium, purpose-driven apparel. Provocative, Subtle, Cryptic — your style is yours.',
       link: 'wear.orangepeel.fr',
       href: 'https://wear.orangepeel.fr',
       features: [
         'Three collections: Warriors, Wizards, Cyphers',
-        'Premium quality',
-        'Bitcoin payments accepted',
         'No crypto noise. Pure Bitcoin conviction.',
+        'Premium quality',
+        'Bitcoin payments',
       ],
     },
     {
       tag: 'Community · Nantes',
       title: 'MeetUp Bitcoin Nantes',
-      desc: 'Free monthly meetup in France. Beginners, experts. Bitcoin, with and without the jargon.',
+      desc: 'Monthly meetup in France. Beginners and experts. Bitcoin, with and without the jargon.',
       link: 'meetup.orangepeel.fr',
-      href: 'https://meetup.orangepeel.fr',
+      href: 'https://meetup.orangepeel.fr/',
       features: [
         'Every 2nd Thursday · Le Startijenn · Île de Nantes · 19h',
         'Free entry · All levels welcome',
@@ -68,28 +67,28 @@ export default function Home() {
       href: 'https://github.com/man-orangepeel',
     },
     {
-      icon: 'Tg',
-      name: 'MeetUp Bitcoin Nantes',
-      sub: 'Telegram community · Nantes',
-      href: 'https://t.me/meetupbitcoinnantes',
-    },
-    {
-      icon: '⚙',
+      icon: 'iA',
       name: 'OrangePeel_iAgent',
-      sub: 'iagent.orangepeel.fr · Open source AI agent',
+      sub: 'Openclaw\'s released cousin',
       href: 'https://iagent.orangepeel.fr',
     },
     {
-      icon: 'Tg',
+      icon: 'Fl',
       name: 'OrangePeel_Flow',
-      sub: 'Telegram channel · French · Bitcoin only',
+      sub: 'High quality signal · Bitcoin only',
       href: 'https://t.me/OrangePeel_Flow',
     },
     {
-      icon: 'W',
+      icon: 'We',
       name: 'OrangePeel_Wear',
-      sub: 'wear.orangepeel.fr',
+      sub: 'Wear your Values. Spread your World.',
       href: 'https://wear.orangepeel.fr',
+    },
+    {
+      icon: 'Mu',
+      name: 'MeetUp Bitcoin Nantes',
+      sub: 'French local community',
+      href: 'https://meetup.orangepeel.fr',
     },
   ]
 
@@ -111,7 +110,6 @@ export default function Home() {
       <section className="hero">
         <div className="hero-glow" />
         <div className="hero-inner">
-          <p className="hero-sup">orangepeel.fr</p>
           <h1 className="hero-title">
             Life believer.<br />
             Product builder.<br />
@@ -120,19 +118,20 @@ export default function Home() {
           <div className="hero-bio">
             <p>
               I&apos;ve served the environment, then the human spirit.
+              <br />
               Bitcoin reoriented everything — not by changing me,
-              but by giving me an <strong>incorruptible framework to act within</strong>.
+              but by giving me an <strong>incorruptible framework to act within, with outsized impact</strong>.
             </p>
             <p>
-              Product Owner in IT consulting, on mission for major accounts (BPCE, PwC, EDF)
-              and currently for <strong>Bitcoin Villages</strong>.
+              Product Owner in IT consulting on mission for major accounts (PwC, BPCE, EDF).
+              General Manager for <a href="https://www.linkedin.com/company/btcvillages/" target="_blank" rel="noopener noreferrer"><strong>Bitcoin Villages</strong></a>.
               Alongside this, four side projects — all gathered here.
             </p>
             <ul className="hero-projects">
-              <li><strong>OrangePeel_Flow</strong> — French Telegram channel · Bitcoin only</li>
-              <li><strong>OrangePeel_Wear</strong> — Clothes for Ungovernable People</li>
-              <li><strong>OrangePeel_iAgent</strong> — OpenClaw without OpenClaw · Free on GitHub.</li>
-              <li><strong>MeetUp Bitcoin Nantes</strong> — Monthly meetup in France</li>
+              <li><a href="https://t.me/OrangePeel_Flow" target="_blank" rel="noopener noreferrer"><strong>OrangePeel_Flow</strong></a> — French Telegram channel · Bitcoin only</li>
+              <li><a href="https://wear.orangepeel.fr" target="_blank" rel="noopener noreferrer"><strong>OrangePeel_Wear</strong></a> — Clothes for Ungovernable People</li>
+              <li><a href="https://iagent.orangepeel.fr" target="_blank" rel="noopener noreferrer"><strong>OrangePeel_iAgent</strong></a> — OpenClaw&apos;s safe, open-source cousin · Free</li>
+              <li><a href="https://meetup.orangepeel.fr" target="_blank" rel="noopener noreferrer"><strong>MeetUp Bitcoin Nantes</strong></a> — Monthly meetup in France</li>
             </ul>
             <p>
               Bitcoin frees money. Bitcoin frees minds. Let&apos;s do our part.
@@ -151,7 +150,7 @@ export default function Home() {
           <p className="sec-sup">Work</p>
           <h2 className="sec-title">What I <em>build</em> (side projects)</h2>
           <p className="sec-sub">
-            Four projects, one conviction. Each autonomous, each useful.
+            Four projects driven by maximum impact through Bitcoin and AI.
           </p>
           <div className="projects-grid">
             {projects.map((p) => (
