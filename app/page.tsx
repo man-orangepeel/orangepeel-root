@@ -2,9 +2,8 @@ export default function Home() {
   const projects = [
     {
       tag: 'AI · Sovereign',
-      icon: 'i',
       title: 'OrangePeel_iAgent',
-      desc: 'Personal AI agent built on Claude — more transparent, more secure, and more sovereign than OpenClaw. 100% readable code, full security audit in one command. Free on GitHub. Designed to evolve toward local LLMs for true offline sovereignty.',
+      desc: 'Personal AI agent freed from OpenClaw — full ownership of the code for greater transparency and control. Full security audit in one command. Free on GitHub. Designed to evolve toward local LLMs for true offline sovereignty.',
       link: 'iagent.orangepeel.fr',
       href: 'https://iagent.orangepeel.fr',
       features: [
@@ -15,38 +14,35 @@ export default function Home() {
       ],
     },
     {
+      tag: 'Media · Telegram',
+      title: 'OrangePeel_Flow',
+      desc: 'Free French-language Telegram channel. Bitcoin only. 5\u20138 high-value signals per day.',
+      link: 'Join the channel',
+      href: 'https://t.me/OrangePeel_Flow',
+      features: [
+        'Adoption signals & educational fundamentals',
+        'Community polls',
+        'No ads, no altcoins, no short-term speculation',
+        'Runs freely and daily on OrangePeel_iAgent',
+      ],
+    },
+    {
       tag: 'Lifestyle · E-commerce',
-      icon: 'W',
       title: 'OrangePeel_Wear',
-      desc: 'Bitcoin-only clothing. Warriors, Wizards, Cyphers — three postures, one conviction. Wearing your values is a political act. No crypto noise, no speculation. Pure signal.',
+      desc: 'OrangePeel_Wear embodies the spirit of Bitcoin through premium, purpose-driven apparel. Provocative, Subtle, Cryptic — your style is yours.',
       link: 'wear.orangepeel.fr',
       href: 'https://wear.orangepeel.fr',
       features: [
         'Three collections: Warriors, Wizards, Cyphers',
-        'Premium quality — ethical sourcing',
-        'Bitcoin payments accepted — onchain & Lightning',
+        'Premium quality',
+        'Bitcoin payments accepted',
         'No crypto noise. No altcoins. Pure Bitcoin conviction.',
       ],
     },
     {
-      tag: 'Media · Telegram',
-      icon: 'F',
-      title: 'OrangePeel_Flow',
-      desc: 'Free French-language Telegram channel. Several times a week: adoption signals, educational fundamentals, a weekly community poll. No altcoins, no ads. High-value signal only.',
-      link: 'Join the channel',
-      href: 'https://t.me/OrangePeel_Flow',
-      features: [
-        'Several times a week: adoption signals & educational fundamentals',
-        'Weekly community poll — results commented the next day',
-        'No ads, no altcoins, no short-term speculation',
-        'Runs on iAgent — automated, sovereign, daily',
-      ],
-    },
-    {
       tag: 'Community · Nantes',
-      icon: 'M',
       title: 'MeetUp Bitcoin Nantes',
-      desc: 'Free monthly meetup. Every 2nd Thursday, Le Startijenn. Beginners, experts, merchants — no registration, no prerequisites. Bitcoin, without the jargon.',
+      desc: 'Free monthly meetup in France. Beginners, experts. Bitcoin, with and without the jargon.',
       link: 'meetup.orangepeel.fr',
       href: 'https://meetup.orangepeel.fr',
       features: [
@@ -73,27 +69,27 @@ export default function Home() {
     },
     {
       icon: 'Tg',
-      name: 'OrangePeel_Flow',
-      sub: 'Telegram channel · French · Bitcoin only',
-      href: 'https://t.me/OrangePeel_Flow',
-    },
-    {
-      icon: 'Tg',
       name: 'MeetUp Bitcoin Nantes',
       sub: 'Telegram community · Nantes',
       href: 'https://t.me/meetupbitcoinnantes',
-    },
-    {
-      icon: 'W',
-      name: 'OrangePeel_Wear',
-      sub: 'wear.orangepeel.fr',
-      href: 'https://wear.orangepeel.fr',
     },
     {
       icon: '⚙',
       name: 'OrangePeel_iAgent',
       sub: 'iagent.orangepeel.fr · Open source AI agent',
       href: 'https://iagent.orangepeel.fr',
+    },
+    {
+      icon: 'Tg',
+      name: 'OrangePeel_Flow',
+      sub: 'Telegram channel · French · Bitcoin only',
+      href: 'https://t.me/OrangePeel_Flow',
+    },
+    {
+      icon: 'W',
+      name: 'OrangePeel_Wear',
+      sub: 'wear.orangepeel.fr',
+      href: 'https://wear.orangepeel.fr',
     },
   ]
 
@@ -102,8 +98,7 @@ export default function Home() {
       {/* ── NAV ── */}
       <nav>
         <div className="nav-mark">
-          <div className="nav-dot" />
-          <span className="nav-name">orangepeel.fr</span>
+          <img src="/logo.png" alt="OrangePeel" className="nav-logo" />
         </div>
         <ul className="nav-links">
           <li><a href="#work">Work</a></li>
@@ -134,10 +129,10 @@ export default function Home() {
               Alongside this, four side projects — all gathered here.
             </p>
             <ul className="hero-projects">
-              <li><strong>OrangePeel_Flow</strong> — Telegram channel · French · Bitcoin only</li>
-              <li><strong>OrangePeel_Wear</strong> — Clothes for Sovereigned People</li>
-              <li><strong>OrangePeel_iAgent</strong> — More sovereign than OpenClaw. Free on GitHub.</li>
-              <li><strong>MeetUp Bitcoin Nantes</strong> — Monthly meetup · Free · No prerequisites</li>
+              <li><strong>OrangePeel_Flow</strong> — French Telegram channel · Bitcoin only</li>
+              <li><strong>OrangePeel_Wear</strong> — Clothes for Ungovernable People</li>
+              <li><strong>OrangePeel_iAgent</strong> — OpenClaw without OpenClaw · Free on GitHub.</li>
+              <li><strong>MeetUp Bitcoin Nantes</strong> — Monthly meetup in France</li>
             </ul>
             <p>
               Bitcoin frees money. Bitcoin frees minds. Let&apos;s do our part.
@@ -154,7 +149,7 @@ export default function Home() {
       <section id="work" className="projects-section">
         <div className="inner">
           <p className="sec-sup">Work</p>
-          <h2 className="sec-title">What I <em>build</em> — Side projects</h2>
+          <h2 className="sec-title">What I <em>build</em> (side projects)</h2>
           <p className="sec-sub">
             Four projects, one conviction. Each autonomous, each useful.
           </p>
@@ -169,7 +164,6 @@ export default function Home() {
               >
                 <div className="pcard-accent" />
                 <span className="pcard-tag">{p.tag}</span>
-                <div className="pcard-icon">{p.icon}</div>
                 <h3 className="pcard-title">{p.title}</h3>
                 <p className="pcard-desc">{p.desc}</p>
                 {p.features && (
@@ -261,6 +255,7 @@ export default function Home() {
       <footer>
         <div className="footer-inner">
           <p className="footer-manifesto">Bitcoin frees money. Bitcoin frees minds.</p>
+          <img src="/logo.png" alt="OrangePeel" className="footer-logo" />
           <p className="footer-copy">&copy; 2026 · Built on conviction. Paid in sats.</p>
         </div>
       </footer>
