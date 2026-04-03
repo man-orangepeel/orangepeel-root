@@ -7,7 +7,7 @@
   --bg-alt: #111111;
   --bg-card: #131313;
   --text: #e4ddd4;
-  --text-muted: #5c574f;
+  --text-muted: #9a9389;
   --text-soft: #928d85;
   --border: rgba(255, 255, 255, 0.06);
   --font-display: 'Playfair Display', Georgia, serif;
@@ -132,7 +132,7 @@ nav {
   font-weight: 400;
   line-height: 1.05;
   margin-bottom: 2.25rem;
-  max-width: 14ch;
+  max-width: none;
 }
 
 .hero-title em {
@@ -234,7 +234,7 @@ section { padding: 6.5rem 2.5rem; }
 .projects-grid {
   margin-top: 3.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
@@ -314,6 +314,34 @@ section { padding: 6.5rem 2.5rem; }
   transition: gap 0.2s;
 }
 .pcard:hover .pcard-link { gap: 0.75rem; }
+
+.pcard-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.pcard-features li {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  line-height: 1.6;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.pcard-features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--orange);
+}
 
 /* ─── IAGENT ─── */
 .iagent-section { background: var(--bg); }
