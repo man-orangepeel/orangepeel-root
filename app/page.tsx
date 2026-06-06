@@ -54,9 +54,9 @@ export default function Home() {
 
   const connectLinks = [
     {
-      icon: 'Li',
-      name: 'LinkedIn',
-      sub: 'orangepeel',
+      icon: 'Op',
+      name: 'OrangePeel',
+      sub: 'orangepeel.fr',
       href: 'https://www.orangepeel.fr',
     },
     {
@@ -138,7 +138,7 @@ export default function Home() {
           </div>
           <div className="hero-actions">
             <a href="#work" className="btn-orange">See the work →</a>
-            <a href="https://www.orangepeel.fr" target="_blank" rel="noopener noreferrer" className="btn-line">LinkedIn ↗</a>
+            <a href="https://www.orangepeel.fr" target="_blank" rel="noopener noreferrer" className="btn-line">OrangePeel ↗</a>
           </div>
         </div>
       </section>
